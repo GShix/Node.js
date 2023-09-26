@@ -9,7 +9,9 @@ app.get("/",(req,res)=>{
     })
 })
 app.get("/about",(req,res)=>{
-    res.send("This is about")
+    res.json({
+        Dambar: "Dambar is a Future Developer"
+    })
 })
 app.listen(3000, (req,res)=>{
     console.log("Node js at port 3000")
